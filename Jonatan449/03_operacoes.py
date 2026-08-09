@@ -1,0 +1,10 @@
+r1 = int(input('Primeiro número: '))
+r2 = int(input('Segundo número: '))
+
+print(f'Soma: {r1 + r2}')
+print(f'Subtração: {r1 - r2}')
+print(f'Multiplicação: {r1 * r2}')
+print(f'Divisão: {r1 / r2}')
+print(f'Potência: {r1 ** r2}')
+print(f'Divisão inteira: {r1 // r2}')
+print(f'Resto: {r1 % r2}')
