@@ -1,0 +1,2 @@
+br=int(input('Fala um numero, bro: '))
+print(f'a tabuada desse numero ate o 10 é assim \n {br}×1 é {br*1}\n {br}×2 é {br*2} \n {br}x3 é {br*3} \n{br}x4 é {br*4} \n{br}x5 é {br*5} \n{br}x6 é {br*6} \n{br}x7 é {br*7} \n{br}x8 é {br*8} \n{br}x9 é {br*9} \n{br}x10 é {br*10}')
