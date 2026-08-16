@@ -2,7 +2,7 @@ import math
 continuar="s"
 while continuar=="s":
     print("\033[1m_\033[m"*20)
-    print('\n\033[33m1-Divisão\033[m\033[1;30;41\033[m\n\033[31m2-Multiplicaação\033[m\n\033[35m3-Subtração\033[m\n4-Juros ou Desconto(%)\n5-Raiz Quadrada\n6-Hipotenusa\n\n')
+    print('\n\033[33m1-Divisão\033[m\033[1;30;41\033[m\n\033[31m2-Multiplicação\033[m\n\033[35m3-Subtração\033[m\n4-Juros ou Desconto(%)\n5-Raiz Quadrada\n6-Hipotenusa\n\n')
     escolha=int(input('Escolha uma opção: '))
     print('_'*20)
     while escolha not in [1, 2, 3, 4, 5, 6]:
