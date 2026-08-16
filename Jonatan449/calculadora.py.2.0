@@ -1,0 +1,46 @@
+import math
+continuar="s"
+while continuar=="s":
+    print("\033[1m_\033[m"*20)
+    print('\n\033[33m1-Divisão\033[m\033[1;30;41\033[m\n\033[31m2-Multiplicaação\033[m\n\033[35m3-Subtração\033[m\n4-Juros ou Desconto(%)\n5-Raiz Quadrada\n6-Hipotenusa\n\n')
+    escolha=int(input('Escolha uma opção: '))
+    print('_'*20)
+    while escolha not in [1, 2, 3, 4, 5, 6]:
+        escolha=int(input("Essa opcao è inexistente, tente outra que esteja na lista: "))
+    if escolha==1:
+        div1=float(input('Numero da sua divisão: '))
+        div2=float(input('O segundo numero agora: '))
+        print(f'A resposta de {div1:g} dividido por {div2:g} é {div1/div2:g}')
+    elif escolha==2:
+        mult1=float(input('Fala o primeiro numero: '))
+        mult2=float(input('Agora o segundo: '))
+        print(f'O numero {mult1:g} × {mult2:g} é igual a {mult1*mult2:g}')
+    elif escolha==3:
+        sub1=float(input('Digite o primeiro numero que quer subtrair: '))
+        sub2=float(input("Por qual numero?: "))
+        print(f'{sub1:g}-{sub2:g} é {sub1-sub2:g}')
+    elif escolha==4:
+        print('1-Juros\n2-Desconto')
+        opcao=int(input('Escolha: '))
+        while opcao not in [1, 2]:
+            opcao=int(input("Cara, esquece. Escolha certo...\n\033[1mSÓ TEM 2 OPCOES E VOCE AINDA ERRA??\033[m. Escolha novamente!: "))
+        if opcao==1:
+            ju=float(input('Digite o valor inicial: '))
+            por=float(input('Agora digite a taxa de juros: '))
+            print(f'Seu valor depois da taxa vai ser {ju+ (ju*por/100):g}')
+        elif opcao==2:
+            val=float(input('Digite o valor inical: ' ))
+            des=float(input('Digite a porcentagem dos descontos: '))
+            print(f'Seu valor depois dos descontos será {val-(val*des/100):g}')
+    elif escolha==5: 
+        num=float(input('Qual numero voce deseja descobrir a raiz quadrada?'))
+        raiz=math.sqrt(num)
+        print(f'A raiz quadrada de {num:g} é {raiz:g}')
+    elif escolha==6:
+        ctt1=float(input('Valor do primeiro cateto: '))
+        ctt2=float(input('Valor do segundo cateto: '))
+        hip=math.hypot(ctt1,ctt2)
+        print(f'A hipotenusa desses catetos é {hip:g}')
+    continuar=input("\n\n\033[1;36mquer continuar(s/n)?: \033[m").lower()
+    while continuar not in ['s', 'n']:
+        continuar=input("\nTente novamente, é s ou n: ").lower()
