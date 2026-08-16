@@ -43,4 +43,4 @@ while continuar=="s":
         print(f'A hipotenusa desses catetos é {hip:g}')
     continuar=input("\n\n\033[1;36mquer continuar(s/n)?: \033[m").lower()
     while continuar not in ['s', 'n']:
-        continuar=input("\nTente novamente, é s ou n: ").lower()
+        continuar=input("\nTente novamente, é \033[1ms\033[m ou \033[1mn\033[m: ").lower()
