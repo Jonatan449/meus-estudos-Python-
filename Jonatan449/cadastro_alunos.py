@@ -1,3 +1,4 @@
+from time import sleep
 cores={"amarelo": "\033[33m",
        "vermelho": "\033[31m",
        "branco": "\033[1;97m",
@@ -24,5 +25,7 @@ print(f"{cores["branco"]}_{cores["limpa"]}"*20)
 for a in alunos:
        if a["media"]>=7:
           print(f"{a["nome"]} foi {cores["verde"]}APROVADO{cores["limpa"]}")
+sleep(1)
        else:
           print(f"{a["nome"]} foi {cores["vermelho"]}REPROVADO{cores["limpa"]}")
+sleep(1)
