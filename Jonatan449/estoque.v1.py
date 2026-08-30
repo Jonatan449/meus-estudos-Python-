@@ -142,7 +142,7 @@ while True:
                   print(f"{cores['amarelo']}Não achei produto cujo nome é '{alt_quant}'\nVerifique e tente novamente.{cores['limpa']}")
     elif option==5:
            crtz=input("Tem certeza que deseja excluir?\n[S/N]: ").strip().lower()
-           if crtz=="sim":
+           if crtz=="s":
                exc=input("Qual produto deseja excluir: ").strip().casefold()
                achou=False
                for produto in produtos:
