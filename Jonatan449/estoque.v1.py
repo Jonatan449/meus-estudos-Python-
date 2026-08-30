@@ -155,4 +155,4 @@ while True:
                       print(f"{cores['branco']}Não encontramos '{exc}' para excluir\nVerifique o nome e tente novamente.{cores['limpa']}")
     elif option==6:
            print("Ok, tchau")
-           breakq
+           break
